@@ -32,7 +32,7 @@ header{
 
 .nav-list{
     max-width: 600px;
-    width: 600px;
+    width: 100%;
     min-height: 80px;
     display: flex;
     justify-content: space-between;
@@ -46,12 +46,56 @@ a{
     font-style: italic;
 }
 
-.food-plate{
+.section-1-container{
     max-width: 1990px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.headline{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.food-container{
+    max-width: 1990px;
+    width: 100%;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-choice{
+    width: 250px;
+    height: 280px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.food-pics{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    border: 10px solid black;
+}
+
+.order-foodbtn{
+    width: 175px;
+    height: 50px;
+    font-style: italic;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
     background-color: black;
+    color: white;
 }
