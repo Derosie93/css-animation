@@ -4,6 +4,10 @@ body{
     box-sizing: border-box;
 }
 
+
+/*--------------------------- Header -----------------------*/
+
+
 header{
     width: 100%;
     height: 250px;
@@ -46,32 +50,43 @@ a{
     font-style: italic;
 }
 
+/*--------------------------- End Header ----------------------*/
+
+/*------------------------- section-1 ------------------------*/
+
+
 .section-1-container{
     max-width: 1990px;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(177, 157, 157, 0.61);
+    box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
 }
 
 .headline{
-    width: 350px;
-    height: 150px;
+    max-width: 600px;
+    width: 100%;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
+    font-size: 50px;
+    margin-top: 10px;
 }
 
 .food-container{
     max-width: 1990px;
     width: 100%;
-    min-height: 280px;
+    height: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
 }
 
 .food-choice{
@@ -80,6 +95,8 @@ a{
     text-align: center;
     font-size: 25px;
     font-style: italic;
+    margin: 50px;
+    /* animation: imgZoom 3.5s ease infinite; */
 }
 
 .food-pics{
@@ -87,6 +104,14 @@ a{
     height: 250px;
     margin-top: 20px;
     border: 10px solid black;
+    object-fit: cover;
+    /*animation: imgZoom 3.5s ease infinite;*/
+}
+
+@keyframes imgZoom{
+    0% {transform: scale(1) rotate(0deg);}
+    50% {transform: scale(1) rotate(10deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
 
 .order-foodbtn{
@@ -99,3 +124,13 @@ a{
     background-color: black;
     color: white;
 }
+
+.order-foodbtn:hover{
+    background-color: rgba(114, 50, 27, 0.527);
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+/*animate__animated animate__flash animate__infinite*/
+
+/*----------------------- End Section-1 -----------------------*/
