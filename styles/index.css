@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 
@@ -48,6 +49,8 @@ a{
     text-decoration: none;
     font-size: 20px;
     font-style: italic;
+    color: black;
+    font-weight: 600;
 }
 
 /*--------------------------- End Header ----------------------*/
@@ -96,18 +99,28 @@ a{
     font-size: 25px;
     font-style: italic;
     margin: 50px;
-    /* animation: imgZoom 3.5s ease infinite; */
 }
 
-.food-pics{
+.food-pics1, .food-pics2, .food-pics3, .food-pics4{
     width: 250px;
     height: 250px;
     margin-top: 20px;
     border: 10px solid black;
     object-fit: cover;
-    /*animation: imgZoom 3.5s ease infinite;*/
+    animation: imgZoom 3.5s ease infinite;
 }
 
+.food-pics2{
+    animation-delay: 0.5s;
+}
+
+.food-pics3{
+    animation-delay: 1s;
+}
+
+.food-pics4{
+    animation-delay: 1.5s;
+}
 @keyframes imgZoom{
     0% {transform: scale(1) rotate(0deg);}
     50% {transform: scale(1) rotate(10deg);}
@@ -127,8 +140,8 @@ a{
 
 .order-foodbtn:hover{
     background-color: rgba(114, 50, 27, 0.527);
-    transition: all 0.3s ease-in-out;
-    transition-delay: 0.3s;
+    transition: all 0.5s ease-in-out;
+    
 }
 
 /*animate__animated animate__flash animate__infinite*/
